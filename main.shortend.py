@@ -8,10 +8,10 @@ reversedict = {1:"snake",-1:"water",0:"gun"}
 
 you = youdict[youstr]
 
-print(f"you chose {reversedict[you]} and computer chose {reversedict[computer]}")
+print(f"You chose {reversedict[you]} and Computer chose {reversedict[computer]}")
 
 if(computer == you):
-    print("match is draw")
+    print("Match is a draw..")
 else:
 
     """
@@ -34,6 +34,6 @@ else:
     # The below logic is written on the basis of the value of (you - computer)
     
     if(((you - computer) == 1) or ((you - computer) == -2)):   
-        print("you lose !")
+        print("You Lose !")
     else:
-        print("you win") 
+        print("You Win !") 

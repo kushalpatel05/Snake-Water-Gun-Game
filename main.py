@@ -21,7 +21,7 @@ you = youdict[youstr]
 
 # By now, we have 2 numbers (variables), you and computer 
 
-print(f"you chose {reversedict[you]} \ncomputer chose {reversedict[Computer]}")
+print(f"You chose {reversedict[you]} \nComputer chose {reversedict[Computer]}")
 
 # If both choices are the same, it's a draw
 if(Computer == you):
@@ -30,10 +30,10 @@ if(Computer == you):
 else:
     # Check all winning and losing conditions based on combinations
     if(Computer == -1 and you == 1 ):
-        print("You win...")
+        print("You Win...")
 
     elif(Computer == -1 and you == 0):
-        print("You lose...")
+        print("You Lose...")
 
     elif(Computer == 0 and you == -1):
         print("You win...")
@@ -42,10 +42,10 @@ else:
         print("You Lose...")
 
     elif(Computer == 1 and you == -1):
-        print("You lose...")
+        print("You Lose...")
 
     elif(Computer == 1 and you == 0):
-        print("You win...")
+        print("You Win...")
     
     else:
-        print("something went wrong") # If there is a mistake then, we will know about it.
+        print("Something went wrong.") # If there is a mistake then, we will know about it.
