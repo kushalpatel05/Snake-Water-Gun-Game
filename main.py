@@ -10,8 +10,8 @@ import random
 # Computer randomly selects a value from -1, 0, or 1
 Computer = random.choice([-1,0,1])
 
-# User inputs a choice: S (Snake), W (Water), or G (Gun)
-youstr = input("Enter your choice : ")
+
+youstr = input("Enter your choice from S(Snake), W(Water), G(Gun): ")
 
 youdict = {"S" : 1,"W" : -1,"G" : 0}      #Both dictionaries are connected with each other..
 reversedict = {1 : "Snake", -1 : "Water", 0 : "Gun"}
@@ -20,7 +20,6 @@ reversedict = {1 : "Snake", -1 : "Water", 0 : "Gun"}
 you = youdict[youstr]
 
 # By now, we have 2 numbers (variables), you and computer 
-
 print(f"You chose {reversedict[you]} \nComputer chose {reversedict[Computer]}")
 
 # If both choices are the same, it's a draw
@@ -48,4 +47,4 @@ else:
         print("You Win...")
     
     else:
-        print("Something went wrong.") # If there is a mistake then, we will know about it.
+        print("Something went wrong.") # We’ll know if something is wrong.
